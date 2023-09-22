@@ -1,23 +1,28 @@
 
 
+
+
 import 'dart:io';
 
-void main (){
+void main() {
 
-print("Введите число");
-var a = double.parse(stdin.readLineSync()!);
+print("введите число");
+var first = double.parse(stdin.readLineSync()!);
 
-var summ = double.tryParse($a	*	1
-$a	*	2
-$a	*	3
-$a	*	4
-$a	*	5
-$a	*	6
-$a	*	7
-$a	*	8
-$a	*	9
-$a	*	10);
+print("Введите второе число");
+var second = double.parse(stdin.readLineSync()!);
 
-print(summ);
+var summ = first + second;
+print("Сумма $summ");
+
+
+var minus = first - second;
+print("Вычетания $minus");
+
+double slojenia =first * second;
+print("Сложение $slojenia");
+
+double delenia = first / second;
+print("Деление $delenia");
 
 }
